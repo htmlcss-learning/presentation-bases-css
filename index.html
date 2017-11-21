@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cours CSS</title>
+    <meta name="description" content="Ceci n'est pas un cours de CSS" />
+    <meta name="author" content="Samy Rabih" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/cours.css" id="theme">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <div class="lesBricodeursImage">
+    <img style="width: 142px; position: absolute;" src="img/bric.png" alt="" />
+  </div>
+<div class="reveal">
+	<div class="slides">
+		<section>
+      <h1>Initiation HTML/CSS</h1>
+				<h3>Le CSS c'est quoi ?</h3>
+				<p>
+					<small>LesBricodeurs 2017</small>
+					<small> - créé par Samy Rabih</small>
+				</p></section>
+		</section>
+        <section>
+			<h1>Les CSS, c'est quoi ?</h1>
+            <ul>
+                <li>"Cascading Style Sheets"</li>
+                <li>Ensemble de styles d'affichage</li>
+                <li>Elles sont cumulatives</li>
+                <li>Les styles sont définis globalement</li>
+                <li>Norme actuelle : CSS3</li>
+            </ul>
+		</section>
+        <section>
+			<h1>A quoi ca sert?</h1>
+            <ul>
+                <li>Comparable aux styles d'un traitement de texte</li>
+                <li>On peut <span class="lien_habiller">habiller</span> du HTML</li>
+                <li>On peut même <span style="opacity:0.10">masquer</span> des éléments</li>
+            </ul>
+		</section>
+        <section>
+			<h1>A quoi ca ressemble ?</h1>
+			<pre><code class="html"><div class="toto">tutu</div>
+<div id="titi">tata</div></code></pre>
+            <pre><code class="css">.toto {
+  color:Green;
+}
+#titi {
+  color:Blue
+}</code></pre>
+		</section>
+         <section>
+             <section>
+                <h1>Les grandes familles de propriétés CSS</h1>
+                <p>&nbsp;</p>
+                <p><small>Source : <a href="http://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/memento-des-proprietes-css">OpenClassrooms</a></small></p>
+            </section>
+            <section id="css_text1">
+                <h1>Texte (1/3)</h1>
+                <br />
+				<p class="fragment"><span class="property_name">font-family :</span> <span class="police1">Comic Sans MS</span> <span class="police2">Lucida Console</span></p>
+				<p class="fragment"><span class="property_name">font-size </span>: <span style="font-size:80%">28px</span> <span style="font-size:120%">43px</span></p>
+                <p class="fragment"><span class="property_name">font-weight :</span> <span style="font-weight:normal">normal</span> <span style="font-weight:bold">bold</span></p>
+                <p class="fragment"><span class="property_name">font-style </span>: <span style="font-style:normal">normal</span> <span style="font-style:italic">italic</span></p>
+                <p class="fragment"><span class="property_name">font-variant :</span> <span style="font-variant:normal">normal</span> <span style="font-variant:small-caps">small-caps</span></p>
+            </section>
+            <section id="css_text2">
+                <h1>Texte (2/3)</h1>
+                <br />
+				<p class="fragment" style="text-align:right"><span class="property_name">text-align :</span> left center right</p>
+				<p class="fragment"><span class="property_name">vertical-align : </span>: <span style="vertical-align:bottom">middle</span> <span style="vertical-align:top">super</span></p>
+                <p class="fragment" style="line-height:300%"><span class="property_name">line-height :</span> 200%</p>
+                <p class="fragment" style="text-indent:200px"><span class="property_name">text-indent </span>: 200px</p>
+                <p class="fragment"><span class="property_name">text-shadow :</span> <span style="text-shadow:5px 5px 5px #FFF">ombre portée</span></p>
+            </section>
+            <section id="css_text3">
+                <h1>Texte (3/3)</h1>
+                <br />
+   				<p class="fragment"><span class="property_name">text-decoration :</span> <span style="text-decoration:underline">underline</span></p>
+				<p class="fragment">Les webfonts</p>
+            </section>
+			<section id="css_color">
+                <h1><span style="color:#F60">Couleur</span> et <span style="opacity:0.2">opacité</span></h1>
+                <br />
+				<p><span class="property_name">color :</span> <span style="color:Red">Red</span> <span style="color:#0000FF">#0000FF</span></p>
+				<p><span class="property_name">opacity : </span> <span style="opacity:1">opacité de 1</span> <span style="opacity:0.1">opacité de 0.1</span></p>
+            </section>
+            <section id="css_background">
+                <h1>Le fond (background)</h1>
+                <br />
+				<p class="fragment" style="background-color:Pink;margin-bottom:30px"><span class="property_name">background-color :</span> Pink</p>
+				<p class="fragment alt" style="margin-bottom:30px;background-image: url('img/grumpy_background.png');color: #000 !important;"><span class="property_name">background-image</span></p>
+                <p  class="fragment" style="margin-bottom:30px;background-image: url('img/grumpy_background.png');background-repeat:no-repeat;"><span class="property_name">background-repeat :</span> no-repeat</p>
+                <p  class="fragment" style="background-image: url('img/grumpy_background.png');background-repeat:no-repeat;background-position:right"><span class="property_name">background-position : </span>right</p>
+            </section>
+			<section id="css_measurements">
+                <h1>Les dimensions</h1>
+                <br />
+				<p class="fragment" ><span class="property_name">width, height</span></p>
+				<p class="fragment" ><span class="property_name">padding :</span> ~ marge intérieure</p>
+                <p class="fragment" ><span class="property_name">margin :</span> ~ marge extérieure</p>
+                <p class="fragment" ><span class="property_name">min-width, max-width, min-height, max-height</span></p>
+            </section>
+            </section>
+            <section >
+                      <h1> A vous de jouer !</h1>
+                      <br />
+      				<p><span> Aller sur http://www.htmlinstant.com/</span></p>
+              <br />
+      				<p><span> 1 - Testez les balises</span></p>
+      				<p><span> 2 - Ajoutez des styles</span></p>
+      				<p><span> 3 - Faites un site CV</span></p>
+                  </section>
+            <!-- <section id="css_borders">
+                <h1>Les bordures</h1>
+                <br />
+				<p class="fragment" style="border:15px solid Red"><span class="property_name">border-width :</span>15px</p>
+				<p class="fragment" style="border:10px dashed Red"><span class="property_name">border-style :</span>dashed</p>
+                <p class="fragment" style="border:15px solid Red;"><span class="property_name">border-radius :</span> 20px</p>
+                <p class="fragment" style="border:15px solid Red;border-radius:20px;box-shadow:6px 6px 3px Green"><span class="property_name">box-shadow</span></p>
+            </section>
+             <section id="css_others">
+                <h1>En vrac</h1>
+                <br />
+				<p class="fragment"><span class="property_name">display, visibility</span></p>
+				<p class="fragment"><span class="property_name">position, top, left, right, bottom</span></p>
+                <p class="fragment"><span class="property_name">clear</span></p>
+                <p class="fragment"><span class="property_name">z-index</span></p>
+                <p class="fragment" style="cursor:pointer"><span class="property_name">cursor</span></p>
+            </section>
+        </section>
+        <section>
+        	<h1>Exemples visuels</h1>
+			<ul>
+            	<li><a href="http://codepen.io/juliangarnier/pen/idhuG">3D Solar System</a></li>
+                <li><a href="http://codepen.io/yirmiuc/pen/Dwelk">Navigation Knob</a></li>
+                <li><a href="http://codepen.io/samy-r/pen/wBBeON">Photo Lens</a></li>
+                <li><a href="http://codepen.io/honglio/pen/FKyxG">CSS3 Hover effects</a></li>
+                <li><a href="http://codepen.io/AnderRV/pen/zbFmA">Color spiral</a></li>
+			</ul>
+		</section>
+        <section>
+        	<h1>Sur ordinateur ?</h1>
+			<p class="fragment">Ca fonctionne !</p>
+		</section>
+        <section>
+        	<h1>Et sur mobile ?</h1>
+			<p class="fragment">Oui (mais pas tout, selon les navigateurs)</p>
+		</section>
+        <section>
+        	<h1>Et si on a un petit écran ?</h1>
+			<p class="fragment">Il y a le ...</p>
+			<p class="fragment fireworks" style="font-size:200%"><img src="img/fireworks0.gif" alt="Feu d'artifice tourné vers la gauche" />RESPONSIVE<img src="img/fireworks.gif"  alt="Feu d'artifice tourné vers la droite"/></p>
+		</section>
+        <section>
+        	<h1>A quoi ca sert ?</h1>
+            <p><a href="http://pleaseresize.me/"><img src="img/brief_history_of_fluidity_in_webdesign.png" alt="A brief history of fluidity in webdesign" /></a></p>
+		</section>
+        <section>
+            <section>
+                <h1>Deux solutions</h1>
+                <p class="fragment">L'adaptatif</p>
+                <p class="fragment">Le "vrai" responsive</p>
+            </section>
+            <section>
+                <h1>L'adaptatif</h1>
+                <p>On ne fait que redimensionner l'existant</p>
+			</section>
+            <section>
+                <h1>Le vrai responsive</h1>
+                <p>On affiche/cache des éléments selon l'écran</p>
+			</section>
+             <section>
+                <h1>Comment ?</h1>
+                <p>Via les "media queries" (entre autres)</p>
+                <pre><code class="css">@media screen and (max-width: 640px) {
+  .bloc {
+    color:Red
+  }
+}</code></pre>
+			</section>
+            <section>
+                <h1>Autres contraintes</h1>
+                <p class="fragment">Poids des images</p>
+                <p class="fragment">Navigation pas adaptée</p>
+                <p class="fragment">Ergonomie faite pour la souris</p>
+                <p class="fragment">Formulaires</p>
+			</section>
+		</section>
+        <section>
+			<h1>Merci !</h1>
+		</section> -->
+	</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			theme: Reveal.getQueryHash().theme,
+			transition: Reveal.getQueryHash().transition || 'default',
+		dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+		});
+	</script>
+</body>
+</html>
